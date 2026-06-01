@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sS -o .data/test-next.tgz \"https://registry.npmjs.org/next/-/next-15.1.6.tgz\")",
+      "Bash(echo \"curl exit: $?\")",
+      "Bash(ls -la .data/test-next.tgz)",
+      "Bash(gzip -t .data/test-next.tgz)",
+      "Bash(npm config *)",
+      "Bash(rm -f .data/test-next.tgz .data/chain.txt .data/npm-proxy-ca.pem)",
+      "Bash(echo \"registry: $\\(npm config get registry\\)\")",
+      "Bash(echo \"strict-ssl: $\\(npm config get strict-ssl\\)\")",
+      "Bash(node -e \"try{require\\('playwright'\\);console.log\\('playwright OK'\\)}catch\\(e\\){console.log\\('no playwright'\\)}; try{require\\('puppeteer'\\);console.log\\('puppeteer OK'\\)}catch\\(e\\){console.log\\('no puppeteer'\\)}; try{require\\('puppeteer-core'\\);console.log\\('puppeteer-core OK'\\)}catch\\(e\\){console.log\\('no puppeteer-core'\\)}\")",
+      "Bash(ls \"/c/Program Files/Google/Chrome/Application/chrome.exe\")",
+      "Bash(ls \"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\")",
+      "Bash(powershell.exe -NoProfile -Command 'Get-CimInstance Win32_Process -Filter \"Name='\\\\''node.exe'\\\\''\" | Where-Object { $_.CommandLine -like '\\\\''*next*'\\\\'' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }')",
+      "Bash(powershell.exe -NoProfile -Command \"\\(Get-Process node -ErrorAction SilentlyContinue | Measure-Object\\).Count\")",
+      "Bash(rm -rf .next)",
+      "Bash(export NODE_OPTIONS=\"--use-system-ca\")",
+      "Bash(npx next *)",
+      "Bash(node scripts/shoot.mjs \"http://localhost:3000/\" fixed 900 3)",
+      "Bash(ls -la .shots/fixed-00.png)",
+      "Bash(curl -s -m 90 -o /dev/null -w \"home=%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(node scripts/verify-shot.mjs)",
+      "Bash(node scripts/screenshot-all.mjs)",
+      "Bash(node -e \"const s=require\\('sharp'\\);\\(async\\(\\)=>{const fs=require\\('fs'\\);for\\(const f of fs.readdirSync\\('.shots/site'\\).sort\\(\\)\\){const m=await s\\('.shots/site/'+f\\).metadata\\(\\);console.log\\(f, m.width+'x'+m.height, Math.round\\(fs.statSync\\('.shots/site/'+f\\).size/1024\\)+'KB'\\);}}\\)\\(\\)\")",
+      "Bash(rm -f \"Veer-Aluminium-Screenshots.zip\")",
+      "Bash(powershell.exe -NoProfile -Command \"Compress-Archive -Path 'C:\\\\Users\\\\admin\\\\Documents\\\\das\\\\.shots\\\\site\\\\*.png' -DestinationPath 'C:\\\\Users\\\\admin\\\\Documents\\\\das\\\\Veer-Aluminium-Screenshots.zip' -Force\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(powershell.exe -NoProfile -Command 'Add-Type -A System.IO.Compression.FileSystem; [IO.Compression.ZipFile]::OpenRead\\('\\\\''C:\\\\Users\\\\admin\\\\Documents\\\\das\\\\Veer-Aluminium-Screenshots.zip'\\\\''\\).Entries | ForEach-Object { '\\\\''{0}  \\({1} KB\\)'\\\\'' -f $_.Name, [math]::Round\\($_.Length/1KB\\) }')"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\admin\\.claude\\projects\\c--Users-admin-Documents-das\\memory"
+    ]
+  }
+}

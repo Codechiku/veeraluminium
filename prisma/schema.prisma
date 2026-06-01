@@ -1,0 +1,92 @@
+// Prisma schema for Veer Aluminium & Fabrication
+// Run: npx prisma db push   (then)   npm run db:seed
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUOTE_SENT
+  CONVERTED
+  LOST
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+model Admin {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String?
+  role         Role     @default(ADMIN)
+  createdAt    DateTime @default(now())
+}
+
+model Lead {
+  id            String     @id @default(cuid())
+  name          String
+  phone         String
+  email         String?
+  projectType   String?
+  message       String?
+  estimatedCost Float?
+  status        LeadStatus @default(NEW)
+  source        String?    @default("website")
+  details       Json?
+  notes         String?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+}
+
+// Generic key/value store for pricing config + editable site content blocks.
+// `key` examples: "pricing", "home.hero", "about", etc. Value is JSON.
+model Setting {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  category    String
+  location    String
+  year        Int
+  description String
+  image       String
+  beforeImage String?
+  afterImage  String?
+  videoUrl    String?
+  size        String   @default("normal")
+  tags        String[]
+  featured    Boolean  @default(false)
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String?
+  location  String?
+  rating    Int      @default(5)
+  quote     String
+  image     String?
+  videoUrl  String?
+  published Boolean  @default(true)
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+}
