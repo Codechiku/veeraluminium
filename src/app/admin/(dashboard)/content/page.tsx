@@ -173,7 +173,7 @@ export default function ContentPage() {
             onChange={(v) => update("about", "body", v)}
           />
           <TextField
-            label="Experience badge (e.g. 15+)"
+            label="Experience badge (e.g. 3+)"
             value={content.about.experienceYears}
             onChange={(v) => update("about", "experienceYears", v)}
           />

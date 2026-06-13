@@ -12,7 +12,7 @@ export const siteConfig = {
   description:
     "Veer Aluminium & Fabrication delivers precision-engineered aluminium windows, doors, toughened glass, structural glazing, ACP cladding and custom steel fabrication across Gujarat. Trusted craftsmanship for residential and commercial spaces.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://veeraluminium.com",
-  established: 2009,
+  established: 2023,
   address: {
     line1: "Near Railway Overbridge, Ruppura",
     city: "Palanpur",
@@ -77,6 +77,7 @@ export type ServiceKey =
   | "pop-work"
   | "commercial-glass"
   | "residential-glass"
+  | "profile-shutters"
   | "custom-fabrication";
 
 export interface Service {
@@ -221,6 +222,17 @@ export const services: Service[] = [
     image:
       "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80",
     features: ["Shower enclosures", "Mirrors", "Partitions", "Balcony glazing"],
+  },
+  {
+    key: "profile-shutters",
+    title: "Profile Shutters",
+    short: "Secure roller & profile shutter systems.",
+    description:
+      "Heavy-duty aluminium and steel profile shutters for shops, garages and industrial units — smooth manual or motorised operation with robust security and weather protection.",
+    icon: "Blinds",
+    image:
+      "https://images.unsplash.com/photo-1558959356-2c4a8ca4bb1f?auto=format&fit=crop&w=1200&q=80",
+    features: ["Motorised options", "Aluminium & MS", "Remote operated", "Powder coated"],
   },
   {
     key: "custom-fabrication",

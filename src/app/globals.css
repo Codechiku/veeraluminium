@@ -39,36 +39,37 @@
   }
 
   .dark {
-    --background: 222 30% 7%;
-    --foreground: 210 20% 96%;
+    /* Premium jet-black palette — neutral (hue 0, 0% saturation), no navy tint. */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 96%;
 
-    --card: 222 28% 10%;
-    --card-foreground: 210 20% 96%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 222 28% 9%;
-    --popover-foreground: 210 20% 96%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 210 20% 96%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 0 0% 96%;
+    --primary-foreground: 0 0% 7%;
 
-    --secondary: 217 25% 16%;
-    --secondary-foreground: 210 20% 96%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 217 25% 15%;
-    --muted-foreground: 215 18% 62%;
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 217 25% 18%;
-    --accent-foreground: 210 20% 96%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 96%;
 
     --destructive: 0 62% 45%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217 25% 18%;
-    --input: 217 25% 20%;
+    --border: 0 0% 16%;
+    --input: 0 0% 18%;
     --ring: 41 65% 52%;
 
     --gold: 41 70% 55%;
-    --gold-foreground: 222 47% 11%;
+    --gold-foreground: 0 0% 7%;
   }
 }
 

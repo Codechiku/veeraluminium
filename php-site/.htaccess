@@ -1,0 +1,32 @@
+# Veer Aluminium PHP site — Apache config
+
+DirectoryIndex index.php
+
+# Block direct access to sensitive files/dirs
+<FilesMatch "^(config|helpers|db|data|pricing)\.php$">
+  # These are includes, but the front pages are also .php; only protect the
+  # includes directory below — keep top-level pages reachable.
+</FilesMatch>
+
+# Deny the data fallback directory and includes from web access
+RedirectMatch 404 /\.data(/.*)?$
+RedirectMatch 404 /includes/.*\.php$
+RedirectMatch 404 /admin/includes/.*\.php$
+RedirectMatch 404 /api/_bootstrap\.php$
+RedirectMatch 404 /config\.php$
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>

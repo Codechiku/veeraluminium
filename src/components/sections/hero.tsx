@@ -114,9 +114,9 @@ export function Hero({
             className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-border/70 pt-8"
           >
             {[
-              { v: "15+", l: "Years Experience" },
-              { v: "1200+", l: "Projects Done" },
-              { v: "25+", l: "Cities Served" },
+              { v: "3+", l: "Years Experience" },
+              { v: "150+", l: "Projects Done" },
+              { v: "10+", l: "Cities Served" },
             ].map((s) => (
               <div key={s.l}>
                 <p className="font-display text-3xl font-bold text-foreground">
@@ -188,7 +188,7 @@ export function Hero({
             <p className="mt-1 font-display text-lg font-bold leading-none">
               4.9<span className="text-sm font-normal text-muted-foreground">/5</span>
             </p>
-            <p className="text-xs text-muted-foreground">950+ happy clients</p>
+            <p className="text-xs text-muted-foreground">120+ happy clients</p>
           </motion.div>
         </motion.div>
       </div>

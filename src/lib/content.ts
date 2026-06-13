@@ -17,6 +17,9 @@ export interface Project {
   year: number;
   description: string;
   image: string;
+  /** Natural pixel dimensions of `image` — used to render at true aspect ratio (no cropping). */
+  width?: number;
+  height?: number;
   beforeImage?: string;
   afterImage?: string;
   videoUrl?: string;
@@ -26,122 +29,110 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "skyline-residency",
-    title: "Skyline Residency Glazing",
+    id: "arched-wood-window",
+    title: "Arched Wood-Finish Window",
     category: "Residential",
     location: "Palanpur",
-    year: 2024,
+    year: 2026,
     description:
-      "Full-home aluminium sliding windows and toughened glass balcony railings for a premium 4BHK residence, delivering panoramic views with superior weather sealing.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    beforeImage:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
-    afterImage:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "A statement arched aluminium window in a warm wood-grain powder-coat finish with twin openable casements and integrated grills — combining classic character with modern thermal sealing.",
+    image: "/portfolio/arched-wood-window.png",
+    width: 1086,
+    height: 1448,
     size: "tall",
-    tags: ["Sliding Windows", "Glass Railing", "Toughened Glass"],
+    tags: ["Aluminium Window", "Wood Finish", "Casement"],
   },
   {
-    id: "veer-corporate-tower",
-    title: "Corporate Tower Facade",
-    category: "Commercial",
-    location: "Ahmedabad",
-    year: 2023,
+    id: "modern-villa-glazing",
+    title: "Modern Villa Entrance Glazing",
+    category: "Residential",
+    location: "Mehsana",
+    year: 2026,
     description:
-      "Structural glazing and ACP cladding for a 9-storey corporate tower — a wind-load engineered curtain wall that became a city landmark.",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "Slimline black aluminium glazing with a pivoting glass entry door for a contemporary villa — crisp sightlines, flush glass and weather-tight performance from front elevation to corner windows.",
+    image: "/portfolio/modern-villa-glazing.png",
+    width: 1150,
+    height: 1368,
     size: "wide",
-    tags: ["Structural Glazing", "ACP Cladding", "Facade"],
+    tags: ["Pivot Door", "Aluminium Glazing", "Facade"],
   },
   {
-    id: "industrial-shed",
-    title: "Industrial Fabrication Unit",
-    category: "Industrial",
-    location: "Deesa",
-    year: 2023,
-    description:
-      "Heavy-duty steel fabrication and powder-coated aluminium ventilators for a manufacturing facility, built to withstand harsh industrial conditions.",
-    image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
-    size: "normal",
-    tags: ["Steel Fabrication", "Industrial"],
-  },
-  {
-    id: "glass-house-villa",
-    title: "Glass House Villa",
-    category: "Glass Projects",
-    location: "Mount Abu",
-    year: 2024,
-    description:
-      "Frameless structural glazing wrapping a hillside villa in uninterrupted glass — engineered for thermal comfort and breathtaking views.",
-    image:
-      "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80",
-    size: "tall",
-    tags: ["Structural Glazing", "Frameless Glass"],
-  },
-  {
-    id: "spiral-railing",
-    title: "Designer Glass Railing",
-    category: "Railings",
-    location: "Gandhinagar",
-    year: 2024,
-    description:
-      "Stainless steel and toughened glass railing system for a luxury staircase, combining safety with sculptural elegance.",
-    image:
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80",
-    size: "normal",
-    tags: ["Glass Railing", "SS Handrail"],
-  },
-  {
-    id: "retail-acp",
-    title: "Retail Showroom ACP",
-    category: "ACP Work",
-    location: "Palanpur",
-    year: 2022,
-    description:
-      "Vibrant ACP cladding facade for a flagship retail showroom, with concealed lighting and a fire-rated panel system.",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
-    size: "wide",
-    tags: ["ACP Cladding", "Retail"],
-  },
-  {
-    id: "office-partition",
+    id: "office-glass-partition",
     title: "Office Glass Partitions",
     category: "Commercial",
-    location: "Mehsana",
-    year: 2023,
+    location: "Ahmedabad",
+    year: 2025,
     description:
-      "Floor-to-ceiling glass partitions and aluminium doors creating bright, acoustically comfortable workspaces for a growing enterprise.",
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
-    size: "normal",
-    tags: ["Partitions", "Commercial Glass"],
+      "Floor-to-ceiling black-framed glass partitions and an aluminium glass door dividing an office into bright, acoustically comfortable cabins without blocking natural light.",
+    image: "/portfolio/office-glass-partition.png",
+    width: 1448,
+    height: 1086,
+    size: "wide",
+    tags: ["Glass Partition", "Aluminium Door", "Office"],
   },
   {
-    id: "premium-balcony",
-    title: "Premium Balcony Glazing",
+    id: "frosted-glass-cabin",
+    title: "Frosted Glass Cabin Partition",
+    category: "Commercial",
+    location: "Gandhinagar",
+    year: 2025,
+    description:
+      "A free-standing matte-black aluminium cabin with frosted glass infills — a private meeting room carved out of an open floor plate with clean, modern detailing.",
+    image: "/portfolio/frosted-glass-cabin.png",
+    width: 1086,
+    height: 1448,
+    size: "tall",
+    tags: ["Partition", "Frosted Glass", "Aluminium"],
+  },
+  {
+    id: "corner-picture-window",
+    title: "Corner Picture Window",
     category: "Residential",
     location: "Banaskantha",
+    year: 2025,
+    description:
+      "A large fixed black-framed corner picture window framing uninterrupted countryside views, engineered with structural mullions for strength and minimal sightlines.",
+    image: "/portfolio/corner-picture-window.png",
+    width: 1086,
+    height: 1448,
+    size: "tall",
+    tags: ["Fixed Window", "Aluminium", "Picture Window"],
+  },
+  {
+    id: "window-safety-grill",
+    title: "Designer Window Safety Grill",
+    category: "Railings",
+    location: "Deesa",
     year: 2024,
     description:
-      "Slimline sliding glass balcony enclosures that protect against dust and weather while preserving open views.",
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "A robust horizontal-bar safety grill in a warm copper finish over a stone-framed window — security and protection delivered with a clean architectural rhythm.",
+    image: "/portfolio/window-safety-grill.png",
+    width: 1168,
+    height: 1347,
     size: "normal",
-    tags: ["Balcony Glazing", "Sliding"],
+    tags: ["Safety Grill", "MS Work", "Window"],
+  },
+  {
+    id: "frameless-glass-cabin",
+    title: "Frameless Glass Office Cabin",
+    category: "Glass Projects",
+    location: "Palanpur",
+    year: 2024,
+    description:
+      "Frameless toughened glass partitions and swing doors enclosing a wood-and-marble executive cabin — a seamless glass envelope that keeps the interior open and light-filled.",
+    image: "/portfolio/frameless-glass-cabin.png",
+    width: 1086,
+    height: 1448,
+    size: "tall",
+    tags: ["Frameless Glass", "Partition", "Interior"],
   },
 ];
 
 export const projectCategories: ProjectCategory[] = [
   "Residential",
   "Commercial",
-  "Industrial",
   "Glass Projects",
   "Railings",
-  "ACP Work",
 ];
 
 export interface Testimonial {
@@ -211,10 +202,10 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { label: "Projects Completed", value: 1200, suffix: "+", icon: "CheckCircle2" },
-  { label: "Happy Clients", value: 950, suffix: "+", icon: "Users" },
-  { label: "Years Experience", value: 15, suffix: "+", icon: "CalendarClock" },
-  { label: "Cities Served", value: 25, suffix: "+", icon: "MapPin" },
+  { label: "Projects Completed", value: 150, suffix: "+", icon: "CheckCircle2" },
+  { label: "Happy Clients", value: 120, suffix: "+", icon: "Users" },
+  { label: "Years Experience", value: 3, suffix: "+", icon: "CalendarClock" },
+  { label: "Cities Served", value: 10, suffix: "+", icon: "MapPin" },
 ];
 
 export interface TimelineItem {
@@ -225,34 +216,28 @@ export interface TimelineItem {
 
 export const timeline: TimelineItem[] = [
   {
-    year: "2009",
+    year: "2023",
     title: "The Foundation",
     description:
-      "Veer Aluminium & Fabrication opens its first workshop in Palanpur, driven by a simple promise: precision craftsmanship at honest prices.",
+      "Veer Aluminium & Fabrication opens its Palanpur workshop with a clear promise: precise aluminium and glass work at honest prices.",
   },
   {
-    year: "2014",
-    title: "Scaling Up",
+    year: "2024",
+    title: "Building Trust",
     description:
-      "Expanded into structural glazing and ACP cladding, serving our first commercial landmark projects across Banaskantha.",
+      "Expanded from residential windows into railings, partitions and storefront glass for clients across Banaskantha.",
   },
   {
-    year: "2018",
-    title: "Modern Manufacturing",
+    year: "2025",
+    title: "Commercial Projects",
     description:
-      "Invested in CNC cutting, automated powder coating and a dedicated glass-processing line for enterprise-grade consistency.",
-  },
-  {
-    year: "2021",
-    title: "Regional Leader",
-    description:
-      "Became one of North Gujarat's most trusted names for aluminium and glass, completing over 800 projects across 20+ cities.",
+      "Delivered larger ACP, glazing and fabrication assignments while strengthening site measurement and installation workflows.",
   },
   {
     year: "2026",
-    title: "Engineering the Future",
+    title: "Growing Across Gujarat",
     description:
-      "Digital-first quotations, 3D previews and turnkey project management — bringing international standards to every doorstep.",
+      "Crossed 150+ completed projects and 120+ happy clients, bringing faster quotes and cleaner project tracking to every job.",
   },
 ];
 
@@ -264,9 +249,9 @@ export interface WhyChoose {
 
 export const whyChoose: WhyChoose[] = [
   {
-    title: "15+ Years of Experience",
+    title: "3+ Years of Experience",
     description:
-      "Over a decade and a half of perfecting aluminium and glass craftsmanship across residential, commercial and industrial projects.",
+      "Three focused years of aluminium and glass craftsmanship across residential, commercial and industrial projects.",
     icon: "Award",
   },
   {

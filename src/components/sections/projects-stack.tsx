@@ -19,7 +19,10 @@ import { Badge } from "@/components/ui/badge";
  * the next slides up and stacks on top while the one below scales down.
  */
 export function ProjectsStack({ limit = 6 }: { limit?: number }) {
-  const items = allProjects.slice(0, limit);
+  const items = allProjects
+    .slice()
+    .sort((a, b) => b.year - a.year)
+    .slice(0, limit);
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,

@@ -1,6 +1,7 @@
 import {
   AppWindow,
   Award,
+  Blinds,
   Building2,
   CalendarClock,
   CheckCircle2,
@@ -27,6 +28,7 @@ import {
 /** Maps the string icon names used in data files to lucide components. */
 const iconMap: Record<string, LucideIcon> = {
   AppWindow,
+  Blinds,
   DoorOpen,
   MoveHorizontal,
   Frame,

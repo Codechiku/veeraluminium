@@ -122,7 +122,7 @@ export function localBusinessJsonLd() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      reviewCount: "950",
+      reviewCount: "120",
     },
   };
 }

@@ -24,7 +24,7 @@ export function WhyChoose() {
         <SectionHeading
           eyebrow="Why Choose Us"
           title="The Veer Standard of Excellence"
-          description="We combine 15+ years of craftsmanship with modern technology to deliver results that stand the test of time."
+          description="We combine 3+ years of focused craftsmanship with modern technology to deliver results that stand the test of time."
         />
       </div>
 

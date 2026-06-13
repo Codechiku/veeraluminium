@@ -35,7 +35,7 @@ export interface SiteContent {
 
 export const defaultSiteContent: SiteContent = {
   hero: {
-    badge: "Trusted by 950+ clients across Gujarat",
+    badge: "Trusted by 120+ clients across Gujarat",
     titleLead: "Transforming Spaces With",
     titleHighlight: "Premium Aluminium",
     titleTail: "& Glass Solutions",
@@ -47,8 +47,8 @@ export const defaultSiteContent: SiteContent = {
   about: {
     eyebrow: "Our Story",
     title: "Built on Precision, Trusted for Generations",
-    body: "Since 2009, Veer Aluminium & Fabrication has grown from a single Palanpur workshop into one of North Gujarat's most respected names in aluminium, glass and fabrication — without ever compromising on craftsmanship.",
-    experienceYears: "15+",
+    body: "Since 2023, Veer Aluminium & Fabrication has grown from a focused Palanpur workshop into a trusted aluminium, glass and fabrication team across North Gujarat.",
+    experienceYears: "3+",
   },
   services: {
     eyebrow: "What We Do",

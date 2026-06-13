@@ -36,7 +36,8 @@ export function ProjectsGallery({
       filter === "All"
         ? allProjects
         : allProjects.filter((p) => p.category === filter);
-    return limit ? filtered.slice(0, limit) : filtered;
+    const sorted = filtered.slice().sort((a, b) => b.year - a.year);
+    return limit ? sorted.slice(0, limit) : sorted;
   }, [filter, limit]);
 
   return (
@@ -77,22 +78,14 @@ export function ProjectsGallery({
                 onClick={() => setActive(project)}
                 className="group relative block w-full overflow-hidden rounded-2xl border border-border/60 text-left"
               >
-                <div
-                  className={cn(
-                    "relative w-full overflow-hidden",
-                    project.size === "tall"
-                      ? "aspect-[3/4]"
-                      : project.size === "wide"
-                        ? "aspect-[16/10]"
-                        : "aspect-square",
-                  )}
-                >
+                <div className="relative w-full overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    fill
+                    width={project.width ?? 1200}
+                    height={project.height ?? 1500}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="h-auto w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent opacity-90" />
 
@@ -150,13 +143,14 @@ export function ProjectsGallery({
                   className="rounded-none"
                 />
               ) : (
-                <div className="relative aspect-[16/10] w-full">
+                <div className="relative flex w-full justify-center bg-secondary">
                   <Image
                     src={active.image}
                     alt={active.title}
-                    fill
+                    width={active.width ?? 1200}
+                    height={active.height ?? 800}
                     sizes="768px"
-                    className="object-cover"
+                    className="h-auto max-h-[70vh] w-full object-contain"
                   />
                 </div>
               )}
