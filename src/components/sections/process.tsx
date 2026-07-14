@@ -54,7 +54,7 @@ const steps = [
   },
 ];
 
-export function Process() {
+export function Process({ showHeading = true }: { showHeading?: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -63,15 +63,20 @@ export function Process() {
 
   return (
     <section className="section bg-secondary/30">
-      <div className="container">
-        <SectionHeading
-          eyebrow="How We Work"
-          title="From First Visit to Final Handover"
-          description="A seamless, transparent process engineered around your peace of mind."
-        />
-      </div>
+      {showHeading && (
+        <div className="container">
+          <SectionHeading
+            eyebrow="How We Work"
+            title="From First Visit to Final Handover"
+            description="A seamless, transparent process engineered around your peace of mind."
+          />
+        </div>
+      )}
 
-      <div ref={ref} className="container relative mt-12 lg:mt-16">
+      <div
+        ref={ref}
+        className={showHeading ? "container relative mt-12 lg:mt-16" : "container relative"}
+      >
         <div className="grid gap-10 lg:grid-cols-2">
           {/* Sticky media stack (scrollytelling) */}
           <div className="hidden lg:block">

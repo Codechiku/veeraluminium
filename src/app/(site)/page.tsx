@@ -1,7 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { Services } from "@/components/sections/services";
 import { ServicesMarquee } from "@/components/sections/services-marquee";
-import { Process } from "@/components/sections/process";
 import { ProjectsPreview } from "@/components/sections/projects-preview";
 import { Statement } from "@/components/sections/statement";
 import { Stats } from "@/components/sections/stats";
@@ -42,7 +41,6 @@ export default async function HomePage() {
       <Statement />
       <Stats />
       <ProjectsPreview />
-      <Process />
       <EstimateTeaser />
       <About content={content.about} />
       <WhyChoose />
