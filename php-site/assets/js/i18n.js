@@ -2,7 +2,7 @@
    Veer Aluminium — Gujarati language layer (premium revamp).
    Self-contained client-side translator for BOTH the PHP site
    and the Next.js app:
-     • animated first-visit popup offering Gujarati,
+     • bottom language toggle for Gujarati,
      • natural, marketing-grade Gujarati copy (not literal),
      • characterful Gujarati typography (Baloo Bhai 2 / Anek),
      • product names & short-forms stay English (omitted from dict),
@@ -356,7 +356,7 @@
     updateToggle(l);
   }
 
-  // ── Premium Gujarati typography + popup/toggle styling ────────────────────
+  // ── Premium Gujarati typography + toggle styling ────────────────────
   function injectAssets() {
     var f = document.createElement("link");
     f.rel = "stylesheet";
@@ -441,7 +441,7 @@
     var stored = getStored();
     if (stored === "gu") setLang("gu", false);
     else if (stored === "en") setLang("en", false);
-    else showPopup();
+    else setLang("en", false);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
