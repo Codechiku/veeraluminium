@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   Facebook,
   Instagram,
-  Linkedin,
   Mail,
   MapPin,
   Phone,
@@ -25,18 +24,33 @@ export function Footer() {
             </p>
             <div className="mt-6 flex gap-3">
               {[
-                { Icon: Facebook, href: siteConfig.social.facebook, label: "Facebook" },
-                { Icon: Instagram, href: siteConfig.social.instagram, label: "Instagram" },
-                { Icon: Youtube, href: siteConfig.social.youtube, label: "YouTube" },
-                { Icon: Linkedin, href: siteConfig.social.linkedin, label: "LinkedIn" },
-              ].map(({ Icon, href, label }) => (
+                {
+                  Icon: Facebook,
+                  href: siteConfig.social.facebook,
+                  label: "Facebook",
+                  bg: "#1877F2",
+                },
+                {
+                  Icon: Instagram,
+                  href: siteConfig.social.instagram,
+                  label: "Instagram",
+                  bg: "linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)",
+                },
+                {
+                  Icon: Youtube,
+                  href: siteConfig.social.youtube,
+                  label: "YouTube",
+                  bg: "#FF0000",
+                },
+              ].map(({ Icon, href, label, bg }) => (
                 <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-colors hover:border-gold hover:text-gold"
+                  style={{ background: bg }}
+                  className="flex h-10 w-10 items-center justify-center rounded-full text-white shadow-sm transition-transform hover:scale-110"
                 >
                   <Icon className="h-4 w-4" />
                 </a>

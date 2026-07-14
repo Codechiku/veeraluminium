@@ -13,8 +13,8 @@ export function Logo({
       <Image
         src="/logo.png"
         alt="Veer Aluminium & Fabrication"
-        width={1254}
-        height={1254}
+        width={541}
+        height={541}
         priority
         className="h-10 w-10 shrink-0 object-contain"
       />

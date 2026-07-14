@@ -109,7 +109,6 @@ export function localBusinessJsonLd() {
       siteConfig.social.facebook,
       siteConfig.social.instagram,
       siteConfig.social.youtube,
-      siteConfig.social.linkedin,
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",

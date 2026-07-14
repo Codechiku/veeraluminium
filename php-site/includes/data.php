@@ -9,8 +9,8 @@ $SITE = [
     'name' => 'Veer Aluminium & Fabrication',
     'shortName' => 'Veer Aluminium',
     'legalName' => 'Veer Aluminium & Fabrication',
-    'tagline' => 'Premium Aluminium, Glass & Fabrication Solutions',
-    'description' => "Veer Aluminium & Fabrication delivers precision-engineered aluminium windows, doors, toughened glass, structural glazing, ACP cladding and custom steel fabrication across Gujarat. Trusted craftsmanship for residential and commercial spaces.",
+    'tagline' => 'Premium Aluminium Windows, Glass & Fabrication Solutions',
+    'description' => "Veer Aluminium & Fabrication specialises in premium aluminium windows — alongside doors, toughened glass, structural glazing, ACP cladding and custom steel fabrication around Palanpur and across Gujarat. Trusted craftsmanship for residential and commercial spaces.",
     'url' => 'https://veeraluminium.com',
     'established' => 2023,
     'address' => [
@@ -23,20 +23,19 @@ $SITE = [
     ],
     'geo' => ['lat' => 24.1722, 'lng' => 72.4316],
     'contact' => [
-        'phone' => '+91 99999 99999',
-        'phoneRaw' => '+919999999999',
-        'whatsapp' => '919999999999',
-        'email' => 'info@veeraluminium.com',
+        'phone' => '+91 97122 16273',
+        'phoneRaw' => '+919712216273',
+        'whatsapp' => '919712216273',
+        'email' => 'ajchaudhary250@gmail.com',
     ],
     'hours' => [
         'weekdays' => 'Mon – Sat: 9:00 AM – 8:00 PM',
         'sunday' => 'Sunday: By appointment',
     ],
     'social' => [
-        'facebook' => 'https://facebook.com',
-        'instagram' => 'https://instagram.com',
-        'youtube' => 'https://youtube.com',
-        'linkedin' => 'https://linkedin.com',
+        'facebook' => 'https://www.facebook.com/share/1EHe5RK4Zq/',
+        'instagram' => 'https://www.instagram.com/veer_alluminium',
+        'youtube' => 'https://youtube.com/@veeraluminium',
     ],
     'serviceAreas' => ['Palanpur', 'Banaskantha', 'Deesa', 'Mehsana', 'Ahmedabad', 'Gandhinagar', 'Disa', 'Ambaji', 'Mount Abu'],
 ];
@@ -137,10 +136,9 @@ $PROCESS = [
 $FAQS = [
     ['question' => 'How accurate is the online estimate?', 'answer' => 'Our quotation engine uses real material, labour and installation rates to give you a highly accurate ballpark instantly. The final quote is confirmed after a free on-site measurement.'],
     ['question' => 'Do you offer a free site visit?', 'answer' => 'Yes. We provide a free site survey and measurement across Palanpur and surrounding cities so your final quotation is precise to the millimetre.'],
-    ['question' => 'What areas do you serve?', 'answer' => 'We serve Palanpur and the wider North Gujarat region including Banaskantha, Deesa, Mehsana, Ahmedabad, Gandhinagar and beyond. Larger projects are undertaken across Gujarat.'],
+    ['question' => 'What areas do you serve?', 'answer' => 'We serve Palanpur and the surrounding region — typically within a 70–90 km radius of the city — including Banaskantha, Deesa, Mehsana, Ambaji, Mount Abu and nearby towns. Larger projects are undertaken across Gujarat.'],
     ['question' => 'What warranty do you provide?', 'answer' => "We provide a workmanship warranty on installation plus the manufacturer's warranty on hardware and profiles. Specifics are detailed in your final quotation."],
     ['question' => 'How long does a typical project take?', 'answer' => 'Residential windows and doors are typically completed within 7–15 days of confirmation. Larger commercial glazing and ACP projects are scheduled with a detailed timeline.'],
-    ['question' => 'Can I manage the website content and pricing myself?', 'answer' => 'Yes. The admin CMS lets you update content, projects, testimonials and all pricing rates — the estimate calculator recalculates automatically.'],
 ];
 
 // ── Editable site content defaults (src/lib/editable-content.ts) ─────────
@@ -150,14 +148,14 @@ $DEFAULT_CONTENT = [
         'titleLead' => 'Transforming Spaces With',
         'titleHighlight' => 'Premium Aluminium',
         'titleTail' => '& Glass Solutions',
-        'subheading' => 'Trusted aluminium, glass & fabrication experts serving Gujarat with precision engineering and modern design.',
+        'subheading' => 'Aluminium window specialists — and trusted glass & fabrication experts serving Palanpur & Gujarat with precision engineering and modern design.',
         'ctaPrimary' => 'Get Free Estimate',
         'ctaSecondary' => 'View Projects',
     ],
     'about' => [
         'eyebrow' => 'Our Story',
         'title' => 'Built on Precision, Trusted for Generations',
-        'body' => 'Since 2023, Veer Aluminium & Fabrication has grown from a focused Palanpur workshop into a trusted aluminium, glass and fabrication team across North Gujarat.',
+        'body' => 'Since 2023, Veer Aluminium & Fabrication has grown from a focused Palanpur workshop into a trusted team across North Gujarat — specialising in aluminium windows alongside glass and fabrication work.',
         'experienceYears' => '3+',
     ],
     'services' => [

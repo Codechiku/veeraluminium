@@ -183,7 +183,7 @@ require __DIR__ . '/includes/navbar.php';
         <div class="proj-sticky" style="top:calc(6rem + <?= $i * 1.6 ?>rem)" data-i="<?= $i ?>" data-total="<?= $tot ?>">
           <article class="proj-card">
             <div class="grid">
-              <div class="img"><img src="<?= esc($p['image']) ?>" alt="<?= esc($p['title']) ?>" loading="lazy"><span class="badge badge-gold">&nbsp;<?= esc($p['category']) ?>&nbsp;</span></div>
+              <div class="img"><img class="bd" src="<?= esc($p['image']) ?>" alt="" aria-hidden="true"><img src="<?= esc($p['image']) ?>" alt="<?= esc($p['title']) ?>" loading="lazy"><span class="badge badge-gold">&nbsp;<?= esc($p['category']) ?>&nbsp;</span></div>
               <div class="body">
                 <span class="idx">0<?= $i + 1 ?> / 0<?= $tot ?></span>
                 <h3><?= esc($p['title']) ?></h3>

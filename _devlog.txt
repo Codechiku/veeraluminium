@@ -1,0 +1,23 @@
+
+> veer-aluminium-fabrication@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.1.6
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.67:3000
+
+ ✓ Starting...
+ ✓ Ready in 1413ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.1s (1652 modules)
+ GET / 200 in 2490ms
+ ✓ Compiled in 489ms (794 modules)
+ GET / 200 in 280ms
+ ✓ Compiled /manifest.webmanifest in 334ms (875 modules)
+ GET /manifest.webmanifest 200 in 425ms
+ GET / 200 in 332ms
+ GET /manifest.webmanifest 200 in 17ms
+ GET / 200 in 17ms
+ GET /manifest.webmanifest 200 in 7ms
+ GET / 200 in 127ms
+ GET /manifest.webmanifest 200 in 8ms

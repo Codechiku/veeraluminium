@@ -40,14 +40,14 @@ export const defaultSiteContent: SiteContent = {
     titleHighlight: "Premium Aluminium",
     titleTail: "& Glass Solutions",
     subheading:
-      "Trusted aluminium, glass & fabrication experts serving Gujarat with precision engineering and modern design.",
+      "Aluminium window specialists — and trusted glass & fabrication experts serving Palanpur & Gujarat with precision engineering and modern design.",
     ctaPrimary: "Get Free Estimate",
     ctaSecondary: "View Projects",
   },
   about: {
     eyebrow: "Our Story",
     title: "Built on Precision, Trusted for Generations",
-    body: "Since 2023, Veer Aluminium & Fabrication has grown from a focused Palanpur workshop into a trusted aluminium, glass and fabrication team across North Gujarat.",
+    body: "Since 2023, Veer Aluminium & Fabrication has grown from a focused Palanpur workshop into a trusted team across North Gujarat — specialising in aluminium windows alongside glass and fabrication work.",
     experienceYears: "3+",
   },
   services: {

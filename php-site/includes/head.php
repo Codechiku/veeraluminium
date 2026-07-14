@@ -13,7 +13,10 @@ $page_desc = $page_desc ?? $SITE['description'];
   <title><?= esc($page_title) ?></title>
   <meta name="description" content="<?= esc($page_desc) ?>">
   <meta name="theme-color" content="#0a0a0a">
-  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" href="/apple-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:title" content="<?= esc($page_title) ?>">
   <meta property="og:description" content="<?= esc($page_desc) ?>">
@@ -33,6 +36,7 @@ $page_desc = $page_desc ?? $SITE['description'];
       } catch (e) {}
     })();
   </script>
+  <script src="/assets/js/i18n.js" defer></script>
   <?php if (!empty($json_ld)): ?>
   <script type="application/ld+json"><?= json_encode($json_ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
   <?php endif; ?>

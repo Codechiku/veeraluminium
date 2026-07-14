@@ -70,9 +70,9 @@ export interface PricingConfig {
 
 export const defaultPricing: PricingConfig = {
   aluminium: {
-    standard: 320,
-    premium: 480,
-    "heavy-duty": 640,
+    standard: 340,
+    premium: 540,
+    "heavy-duty": 680,
   },
   glass: {
     "5mm": 90,

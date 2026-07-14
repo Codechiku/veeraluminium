@@ -5,7 +5,7 @@
  */
 
 $DEFAULT_PRICING = [
-    'aluminium' => ['standard' => 320, 'premium' => 480, 'heavy-duty' => 640],
+    'aluminium' => ['standard' => 340, 'premium' => 540, 'heavy-duty' => 680],
     'glass' => ['5mm' => 90, '8mm' => 140, '10mm' => 190, '12mm' => 250, 'toughened' => 320, 'laminated' => 380, 'reflective' => 300],
     'frame' => ['white' => 0, 'black' => 35, 'wood-finish' => 70, 'custom-color' => 90],
     'productFactor' => [

@@ -311,8 +311,9 @@ input[type=range]::-moz-range-thumb { height: 18px; width: 18px; border-radius: 
 @media (min-width:768px){ .proj-card .grid { grid-template-columns: 1fr 1fr; } }
 .proj-card .img { position: relative; aspect-ratio: 4/3; overflow: hidden; }
 @media (min-width:768px){ .proj-card .img { aspect-ratio: auto; min-height: 360px; } }
-.proj-card .img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s; }
-.proj-card:hover .img img { transform: scale(1.05); }
+.proj-card .img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: transform .7s; }
+.proj-card .img img.bd { object-fit: cover; transform: scale(1.1); filter: blur(24px); opacity: .4; }
+.proj-card:hover .img img:not(.bd) { transform: scale(1.05); }
 .proj-card .img .badge { position: absolute; left: 1rem; top: 1rem; }
 .proj-card .body { display: flex; flex-direction: column; justify-content: center; padding: 1.75rem; }
 @media (min-width:768px){ .proj-card .body { padding: 2.5rem; } }
@@ -449,8 +450,8 @@ input[type=range]::-moz-range-thumb { height: 18px; width: 18px; border-radius: 
 .footer .brand { grid-column: span 4; }
 .footer .brand p { margin-top: 1.25rem; max-width: 24rem; font-size: .875rem; line-height: 1.7; color: hsl(var(--muted-foreground)); }
 .footer .social { margin-top: 1.5rem; display: flex; gap: .75rem; }
-.footer .social a { display: flex; height: 2.5rem; width: 2.5rem; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid hsl(var(--border)); background: hsl(var(--background)); transition: all .2s; }
-.footer .social a:hover { border-color: hsl(var(--gold)); color: hsl(var(--gold)); }
+.footer .social a { display: flex; height: 2.5rem; width: 2.5rem; align-items: center; justify-content: center; border-radius: 50%; color: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.12); transition: transform .2s, filter .2s; }
+.footer .social a:hover { transform: scale(1.1); filter: brightness(1.08); }
 .footer .social svg { width: 1rem; height: 1rem; }
 .footer .col-3 { grid-column: span 3; }
 .footer .col-2 { grid-column: span 2; }

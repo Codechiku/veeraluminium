@@ -305,7 +305,7 @@ export const faqs: FAQ[] = [
   {
     question: "What areas do you serve?",
     answer:
-      "We serve Palanpur and the wider North Gujarat region including Banaskantha, Deesa, Mehsana, Ahmedabad, Gandhinagar and beyond. Larger projects are undertaken across Gujarat.",
+      "We serve Palanpur and the surrounding region — typically within a 70–90 km radius of the city — including Banaskantha, Deesa, Mehsana, Ambaji, Mount Abu and nearby towns. Larger projects are undertaken across Gujarat.",
   },
   {
     question: "What warranty do you provide?",
@@ -316,10 +316,5 @@ export const faqs: FAQ[] = [
     question: "How long does a typical project take?",
     answer:
       "Residential windows and doors are typically completed within 7–15 days of confirmation. Larger commercial glazing and ACP projects are scheduled with a detailed timeline.",
-  },
-  {
-    question: "Can I manage the website content and pricing myself?",
-    answer:
-      "Yes. The admin CMS lets you update content, projects, testimonials and all pricing rates — the estimate calculator recalculates automatically.",
   },
 ];

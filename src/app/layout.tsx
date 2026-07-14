@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { fontSans, fontDisplay } from "@/lib/fonts";
 import { baseMetadata, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -17,7 +18,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
@@ -52,6 +54,7 @@ export default function RootLayout({
         )}
       >
         <Providers>{children}</Providers>
+        <Script src="/i18n.js" strategy="afterInteractive" />
       </body>
     </html>
   );

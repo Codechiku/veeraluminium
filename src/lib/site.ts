@@ -8,9 +8,9 @@ export const siteConfig = {
   name: "Veer Aluminium & Fabrication",
   shortName: "Veer Aluminium",
   legalName: "Veer Aluminium & Fabrication",
-  tagline: "Premium Aluminium, Glass & Fabrication Solutions",
+  tagline: "Premium Aluminium Windows, Glass & Fabrication Solutions",
   description:
-    "Veer Aluminium & Fabrication delivers precision-engineered aluminium windows, doors, toughened glass, structural glazing, ACP cladding and custom steel fabrication across Gujarat. Trusted craftsmanship for residential and commercial spaces.",
+    "Veer Aluminium & Fabrication specialises in premium aluminium windows — alongside doors, toughened glass, structural glazing, ACP cladding and custom steel fabrication around Palanpur and across Gujarat. Trusted craftsmanship for residential and commercial spaces.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://veeraluminium.com",
   established: 2023,
   address: {
@@ -27,20 +27,19 @@ export const siteConfig = {
     lng: 72.4316,
   },
   contact: {
-    phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE || "+91 99999 99999",
-    phoneRaw: (process.env.NEXT_PUBLIC_BUSINESS_PHONE || "+919999999999").replace(/\s/g, ""),
-    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919999999999",
-    email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || "info@veeraluminium.com",
+    phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE || "+91 97122 16273",
+    phoneRaw: (process.env.NEXT_PUBLIC_BUSINESS_PHONE || "+919712216273").replace(/\s/g, ""),
+    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919712216273",
+    email: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || "ajchaudhary250@gmail.com",
   },
   hours: {
     weekdays: "Mon – Sat: 9:00 AM – 8:00 PM",
     sunday: "Sunday: By appointment",
   },
   social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
-    youtube: "https://youtube.com",
-    linkedin: "https://linkedin.com",
+    facebook: "https://www.facebook.com/share/1EHe5RK4Zq/",
+    instagram: "https://www.instagram.com/veer_alluminium",
+    youtube: "https://youtube.com/@veeraluminium",
   },
   serviceAreas: [
     "Palanpur",

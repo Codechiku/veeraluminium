@@ -73,14 +73,23 @@ function StackCard({
         className="group mx-auto mb-8 max-w-5xl origin-top overflow-hidden rounded-3xl border border-border/60 bg-card shadow-premium"
       >
         <div className="grid md:grid-cols-2">
-          {/* Image */}
+          {/* Image — blurred backdrop fills the cell, full photo sits on top
+              (object-contain) so portraits are never cropped top/bottom. */}
           <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[360px]">
+            <Image
+              src={project.image}
+              alt=""
+              aria-hidden
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="scale-110 object-cover opacity-40 blur-2xl"
+            />
             <Image
               src={project.image}
               alt={project.title}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-contain transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent md:bg-gradient-to-r" />
             <Badge variant="gold" className="absolute left-4 top-4">
