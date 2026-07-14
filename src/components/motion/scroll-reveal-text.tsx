@@ -71,7 +71,7 @@ function Word({
   range: [number, number];
   gold: boolean;
 }) {
-  const opacity = useTransform(progress, range, [0.12, 1]);
+  const opacity = useTransform(progress, range, [0.48, 1]);
   const y = useTransform(progress, range, [8, 0]);
   return (
     <span className="mr-[0.28em] mt-[0.18em] inline-block">

@@ -94,7 +94,10 @@
 @layer utilities {
   /* Premium gold gradient text */
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-[#d4af37] via-[#f5d57f] to-[#b8860b] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#7a4f00] via-[#b7791f] to-[#6b3f00] bg-clip-text text-transparent;
+  }
+  .dark .text-gradient-gold {
+    @apply from-[#d4af37] via-[#f5d57f] to-[#b8860b];
   }
   .text-gradient {
     @apply bg-gradient-to-br from-foreground to-foreground/60 bg-clip-text text-transparent;
