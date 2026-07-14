@@ -24,8 +24,6 @@
     "Contact": "સંપર્ક",
     "Call": "કૉલ",
     "Call Now": "હમણાં કૉલ કરો",
-    "Get Free Estimate": "મફત અંદાજ મેળવો",
-    "View Projects": "કામ જુઓ",
     "View All Projects": "બધું કામ જુઓ",
     "View All Services": "બધી સેવાઓ જુઓ",
     "Call For Booking": "બુકિંગ માટે કૉલ કરો",
