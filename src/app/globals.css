@@ -78,6 +78,7 @@
     @apply border-border;
   }
   html {
+    font-size: 75%;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
